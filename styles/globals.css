@@ -22,3 +22,87 @@ body {
   padding: 0;
   margin: 0;
 }
+
+/* CodeFlask - Editor */
+#code-editor {
+  display: flex;
+  justify-content: center;
+  backdrop-filter: blur(10px) !important;
+}
+
+.codeflask {
+  background-color: #00000081;
+  color: #fff;
+  width: 600px !important;
+  height: 610px !important;
+  margin: auto !important;
+  border-radius: 20px;
+  backdrop-filter: blur(10px) !important;
+}
+
+.codeflask__flatten {
+  font-size: 20px !important;
+  caret-color: #f8f8f2 !important;
+}
+
+.codeflask__lines {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  background-color: #000000e7 !important;
+  font-size: 20px !important;
+  z-index: 100 !important;
+}
+
+.codeflask.codeflask--has-line-numbers:before {
+  z-index: 100 !important;
+  background-color: #fff !important;
+}
+
+.codeflask .token.punctuation {
+  color: #4a4a4a;
+}
+
+.codeflask .token.keyword {
+  color: #6B7494;
+}
+
+.codeflask .token.operator {
+  color: #ff287e;
+}
+
+.codeflask .token.string {
+  color: #41ad8f;
+}
+
+.codeflask .token.comment {
+  color: #9badb7;
+}
+
+.codeflask .token.function {
+  color: #6B7494;
+}
+
+.codeflask .token.boolean {
+  color: #6B7494;
+}
+
+.codeflask .token.number {
+  color: #6B7494;
+}
+
+.codeflask .token.selector {
+  color: #6B7494;
+}
+
+.codeflask .token.property {
+  color: #6B7494;
+}
+
+.codeflask .token.tag {
+  color: #6B7494;
+}
+
+.codeflask .token.attr-value {
+  color: #6B7494;
+}
