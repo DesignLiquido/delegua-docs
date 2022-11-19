@@ -1,9 +1,8 @@
 // Import's
 import Link from "next/link";
+import React from "react"
 
-// Asset's
-import { BsGithub, BsLinkedin } from "react-icons/bs";
-import { ImNpm } from "react-icons/im";
+import {data} from "../data/dataHeader"
 
 interface Props {
   isOpen: Boolean;
@@ -29,33 +28,23 @@ const Sidebar = ({ isOpen }: Props) => {
 
   return (
     <aside className={sidebarStyle}>
-      <Link className={sidebarItemsStyle} href={""}>
-        Docs
-      </Link>
-      <Link className={sidebarItemsStyle} href={""}>
-        Bibliotecas
-      </Link>
-      <Link className={sidebarItemsStyle} href={""}>
-        Experimente Online
-      </Link>
-      <Link
-        className={sidebarItemsIconStyle}
-        href={"https://github.com/DesignLiquido"}
-      >
-        <BsGithub size={25} /> Github
-      </Link>
-      <Link
-        className={sidebarItemsIconStyle}
-        href={"https://www.linkedin.com/company/design-liquido/"}
-      >
-        <BsLinkedin size={25} /> Linkedin
-      </Link>
-      <Link
-        className={sidebarItemsIconStyle}
-        href={"https://www.npmjs.com/package/delegua"}
-      >
-        <ImNpm size={25} /> Npm
-      </Link>
+      {data.social.map((data) => (
+        <Link
+          className={
+            typeof data.title === "string"
+              ? sidebarItemsStyle
+              : sidebarItemsIconStyle
+          }
+          href={data.link}
+        >
+          {typeof data.title === "string"
+            ? data.title
+            : React.createElement(data.title, {
+                size: 25,
+              })}
+          {typeof data.title === "string" ? null : data.label}
+        </Link>
+      ))}
     </aside>
   );
 };
