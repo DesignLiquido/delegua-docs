@@ -11,7 +11,7 @@ interface Props {
 
 const Sidebar = ({ isOpen }: Props) => {
   const sidebarStyle = `${
-    isOpen ? "w-72" : "w-0"
+    isOpen ? "w-72" : "w-0 p-0"
   } h-[calc(100vh-80px)] absolute backdrop-blur-md z-10 text-white flex
   flex-col items-center justify-center gap-3 p-5 transition-all duration-700`;
 
