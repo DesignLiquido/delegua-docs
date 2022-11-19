@@ -42,7 +42,7 @@ const Header = () => {
             })}
             </div>
           <Link
-            className="p-2 rounded-lg transition-all hover:bg-[#4e99c5]"
+            className="p-2 rounded-lg transition-all hover:bg-[#4e99c5] min-[900px]:hidden"
             href={""}
             onClick={handleToggleSidebar}
           >
