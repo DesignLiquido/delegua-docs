@@ -24,19 +24,19 @@ export const data = {
     {
       title: BsGithub,
       label: "Github",
-      link: "",
+      link: "https://github.com/DesignLiquido/",
       id: 4,
     },
     {
       title: BsLinkedin,
       label: "Linkedin",
-      link: "",
+      link: "https://www.linkedin.com/company/design-liquido/",
       id: 5,
     },
     {
       title: ImNpm,
       label: "Npm",
-      link: "",
+      link: "https://www.npmjs.com/package/delegua",
       id: 6,
     },
   ],
