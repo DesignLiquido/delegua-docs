@@ -1,22 +1,22 @@
 // Import's
 import Header from "../components/Header";
 
-// Asset's
-import styles from "../styles/Home.module.css";
-
 const Home = () => {
   return (
-    <main className={styles.homeContainer}>
+    <main className="w-screen h-screen bg-[url('../assets/images/background.jpg')] bg-cover">
       <Header />
 
-      <div className={styles.mainArea}>
-        <div className={styles.initialContent}>
-          <h1 className={styles.headline}>
+      <div className="w-screen h-[calc(100vh-80px)] pt-28">
+        <div className="">
+          <h1
+            className="text-white text-center text-5xl font-semibold
+            [text-shadow:0_0_10px_#000000b5]"
+          >
             Linguagem de programação universal 100% em português
           </h1>
           <p
-            className="text-center text-white text-2xl w-1/4 m-auto
-          [text-shadow:_0_0px_5px_#0000006c]"
+            className="text-white text-center text-2xl m-auto pt-4
+            [text-shadow:0_0_10px_#000000] w-4/12"
           >
             Execute código em português em qualquer dispositivo que interprete
             JavaScript, como celulares, tablets e computadores.
