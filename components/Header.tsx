@@ -28,16 +28,19 @@ const Header = () => {
 
         <nav
           className="flex items-center justify-center gap-2 text-white
-          text-xl max-[900px]:hidden">
-          {data.social.map((data) => {
-            return(
-              <Link key={data.id} className="p-2 rounded-lg transition-all hover:bg-[#4e99c5]" href={data.link}>
-                {typeof data.title === 'string' ? data.title : React.createElement(data.title, {
-                  size: 25
-                })}
-              </Link>
-            )
-          })}
+          text-xl">
+          
+          <div className="flex max-[900px]:hidden">
+            {data.social.map((data) => {
+              return(
+                <Link key={data.id} className="p-2 rounded-lg transition-all hover:bg-[#4e99c5]" href={data.link}>
+                  {typeof data.title === 'string' ? data.title : React.createElement(data.title, {
+                    size: 25
+                  })}
+                </Link>
+              )
+            })}
+            </div>
           <Link
             className="p-2 rounded-lg transition-all hover:bg-[#4e99c5]"
             href={""}
