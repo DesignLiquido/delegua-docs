@@ -30,6 +30,7 @@ const Sidebar = ({ isOpen }: Props) => {
     <aside className={sidebarStyle}>
       {data.social.map((data) => (
         <Link
+        key={data.id }
           className={
             typeof data.title === "string"
               ? sidebarItemsStyle
