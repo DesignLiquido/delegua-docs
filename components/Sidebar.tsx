@@ -38,13 +38,22 @@ const Sidebar = ({ isOpen }: Props) => {
       <Link className={sidebarItemsStyle} href={""}>
         Experimente Online
       </Link>
-      <Link className={sidebarItemsIconStyle} href={""}>
+      <Link
+        className={sidebarItemsIconStyle}
+        href={"https://github.com/DesignLiquido"}
+      >
         <BsGithub size={25} /> Github
       </Link>
-      <Link className={sidebarItemsIconStyle} href={""}>
+      <Link
+        className={sidebarItemsIconStyle}
+        href={"https://www.linkedin.com/company/design-liquido/"}
+      >
         <BsLinkedin size={25} /> Linkedin
       </Link>
-      <Link className={sidebarItemsIconStyle} href={""}>
+      <Link
+        className={sidebarItemsIconStyle}
+        href={"https://www.npmjs.com/package/delegua"}
+      >
         <ImNpm size={25} /> Npm
       </Link>
     </aside>
