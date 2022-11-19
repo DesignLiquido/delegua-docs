@@ -31,7 +31,7 @@ const Header = () => {
           text-xl max-[900px]:hidden">
           {data.social.map((data) => {
             return(
-              <Link className="p-2 rounded-lg transition-all hover:bg-[#4e99c5]" href={data.link}>
+              <Link key={data.id} className="p-2 rounded-lg transition-all hover:bg-[#4e99c5]" href={data.link}>
                 {typeof data.title === 'string' ? data.title : React.createElement(data.title, {
                   size: 25
                 })}
