@@ -12,17 +12,17 @@ const Sidebar = ({ isOpen }: Props) => {
   const sidebarStyle = `${
     isOpen ? "w-screen" : "w-0"
   } h-[calc(100vh-100px)] absolute backdrop-blur-md z-10 text-white flex
-  flex-col items-center justify-center gap-3 transition-all duration-700`;
+  flex-col items-center justify-center gap-3 transition-all duration-700 md:w-0`;
 
   const sidebarItemsStyle = `${
     isOpen
-      ? "hover:bg-[#4e99c5] p-2 rounded-lg transition-all text-xl w-full text-center"
+      ? "hover:bg-[#4e99c5] p-2 rounded-lg transition-all text-xl w-full text-center md:hidden"
       : "hidden"
   }`;
 
   const sidebarItemsIconStyle = `${
     isOpen
-      ? "hover:bg-[#4e99c5] p-2 rounded-lg transition-all text-xl w-full flex items-center justify-center gap-3"
+      ? "hover:bg-[#4e99c5] p-2 rounded-lg transition-all text-xl w-full flex items-center justify-center gap-3 md:hidden"
       : "hidden"
   }`;
 
