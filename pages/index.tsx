@@ -6,7 +6,7 @@ const Home = () => {
     <main className="w-screen h-screen bg-[url('../assets/images/background.jpg')] bg-cover">
       <Header />
 
-      <div className="w-screen h-[calc(100vh-80px)] pt-28">
+      <div className="w-screen h-[calc(100vh-80px)] pt-28 backdrop-brightness-50">
         <div className="">
           <h1
             className="text-white text-center text-5xl font-semibold
