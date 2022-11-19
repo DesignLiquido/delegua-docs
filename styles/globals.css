@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "Hobby Horse NF";
+  src: url(../assets/fonts/HobbyHorseNF.ttf);
+}
+
 html,
 body {
   box-sizing: border-box;
