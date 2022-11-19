@@ -15,7 +15,7 @@ const Home = () => {
             Linguagem de programação universal 100% em português
           </h1>
           <p
-            className="text-white text-center text-2xl m-auto pt-4
+            className="text-white text-center text-2xl m-auto pt-5
             [text-shadow:0_0_10px_#000000] w-4/12"
           >
             Execute código em português em qualquer dispositivo que interprete
