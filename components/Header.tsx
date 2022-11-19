@@ -32,15 +32,12 @@ const Header = () => {
           {data.social.map((data) => {
             return(
               <Link className="p-2 rounded-lg transition-all hover:bg-[#4e99c5]" href={data.link}>
-                {typeof data.title === 'string' ? data.title : React.createElement(data.title)}
+                {typeof data.title === 'string' ? data.title : React.createElement(data.title, {
+                  size: 25
+                })}
               </Link>
             )
           })}
-
-          {/* <Link className="p-2 rounded-lg transition-all hover:bg-[#4e99c5]" href={""}>
-            Docs
-          </Link> */}
-          
           <Link
             className="p-2 rounded-lg transition-all hover:bg-[#4e99c5]"
             href={""}
