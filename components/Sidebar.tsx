@@ -1,8 +1,8 @@
 // Import's
 import Link from "next/link";
-import React from "react"
+import React from "react";
 
-import {data} from "../data/dataHeader"
+import { data } from "../data/dataHeader";
 
 interface Props {
   isOpen: Boolean;
@@ -10,9 +10,9 @@ interface Props {
 
 const Sidebar = ({ isOpen }: Props) => {
   const sidebarStyle = `${
-    isOpen ? "w-72" : "w-0 p-0"
+    isOpen ? "w-screen" : "w-0 p-0"
   } h-[calc(100vh-80px)] absolute backdrop-blur-md z-10 text-white flex
-  flex-col items-center justify-center gap-3 p-5 transition-all duration-700`;
+  flex-col items-center justify-center gap-3 transition-all duration-700`;
 
   const sidebarItemsStyle = `${
     isOpen
@@ -30,7 +30,7 @@ const Sidebar = ({ isOpen }: Props) => {
     <aside className={sidebarStyle}>
       {data.social.map((data) => (
         <Link
-        key={data.id }
+          key={data.id}
           className={
             typeof data.title === "string"
               ? sidebarItemsStyle
