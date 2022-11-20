@@ -51,7 +51,7 @@ const Home = () => {
           <div>
             <Image
               src={leonelImage}
-              className="rounded-2xl max-[990px]:mb-5"
+              className="rounded-full max-[990px]:mb-5"
               width={350}
               priority
               alt=""

@@ -10,9 +10,9 @@ interface Props {
 
 const Sidebar = ({ isOpen }: Props) => {
   const sidebarStyle = `${
-    isOpen ? "w-screen" : "w-0 p-0"
+    isOpen ? "w-screen p-5" : "w-0 p-0"
   } h-[calc(100vh-100px)] absolute backdrop-blur-md z-10 text-white flex
-  flex-col items-center justify-center gap-3 transition-all p-5 duration-700 md:w-0 md:p-0`;
+  flex-col items-center justify-center gap-3 transition-all  duration-700 md:w-0 md:p-0`;
 
   const sidebarItemsStyle = `${
     isOpen
