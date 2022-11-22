@@ -1,7 +1,6 @@
 // Import's
 import Link from "next/link";
 import React from "react";
-
 import { data } from "../data/dataHeader";
 
 interface Props {

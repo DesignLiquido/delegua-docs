@@ -9,7 +9,7 @@ import deleguaIconWhite from "../assets/images/icone-delegua-branco.png";
 import leonelImage from "../assets/images/leonel.jpg";
 
 const Home = () => {
-  return (
+  return (  
     <main className="w-screen h-screen bg-[url('../assets/images/background.jpg')] bg-cover">
       <Header />
 
